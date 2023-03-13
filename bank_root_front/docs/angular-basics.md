@@ -24,6 +24,19 @@ They are responsible for handling user events, responding to changes in the appl
 
 ### Example
 
+```ts
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-greeting',
+  template: '<h1>Hello {{ name }}!</h1>'
+})
+
+export class GreetingComponent {
+  name: string = 'John';
+}
+```
+
 
 ## Modules
 ### Definition
@@ -35,7 +48,25 @@ They can also be used to encapsulate third-party libraries or other external dep
 
 ### Example
 
+```ts
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { MyComponent } from './my.component';
 
+@NgModule({
+  declarations: [
+    MyComponent
+  ],
+  exports: [
+    MyComponent
+  ],
+  imports: [
+    CommonModule
+  ]
+})
+
+export class MyModule { }
+```
 
 ## Services 
 ### Definition
@@ -47,7 +78,29 @@ They are typically used to manage state, perform data operations, or provide com
 
 ### Example
 
+```ts
+import { Injectable } from '@angular/core';
 
+@Injectable({
+  providedIn: 'root'
+})
+
+export class CounterService {
+  private count: number = 0;
+
+  increment() {
+    this.count++;
+  }
+
+  decrement() {
+    this.count--;
+  }
+
+  getCount() {
+    return this.count;
+  }
+}
+```
 
 ## Templates
 ### Definition
@@ -59,7 +112,16 @@ They are typically defined using inline HTML within the component's TypeScript f
 
 ### Example
 
-
+```angular2html
+<div>
+  <h2>{{ title }}</h2>
+  <ul>
+    <li *ngFor="let item of items">
+      {{ item }}
+    </li>
+  </ul>
+</div>
+```
 
 ## Routes
 ### Definition
@@ -72,7 +134,34 @@ Routes can also be used to pass data between components or to implement authenti
 
 ### Examples 
 
+```ts
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { HomeComponent } from './home.component';
+import { AboutComponent } from './about.component';
 
+const routes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'about', component: AboutComponent }
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+
+export class AppRoutingModule { }
+```
+
+```js
+<div>
+  <nav>
+    <a routerLink="/" routerLinkActive="active">Home</a>
+    <a routerLink="/about" routerLinkActive="active">About</a>
+  </nav>
+  <router-outlet></router-outlet>
+</div>
+```
 
 ## Observables 
 ### Definition
@@ -85,7 +174,31 @@ Observables are a key part of Angular's architecture, and are used extensively t
 
 ### Example
 
+```ts
+import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
+@Component({
+  selector: 'app-root',
+  template: `
+    <h1>Posts</h1>
+    <ul>
+      <li *ngFor="let post of posts$ | async">
+        {{ post.title }}
+      </li>
+    </ul>
+  `
+})
+
+export class AppComponent {
+  posts$: Observable<any>;
+
+  constructor(private http: HttpClient) {
+    this.posts$ = this.http.get('https://jsonplaceholder.typicode.com/posts');
+  }
+}
+```
 
 ## Dependency injection
 ### Definition
@@ -98,6 +211,26 @@ By using DI, Angular promotes loose coupling and separation of concerns, which m
 
 ### Example
 
+```ts
+import { Component } from '@angular/core';
+import { DataService } from './data.service';
+
+@Component({
+  selector: 'app-root',
+  template: `
+    <h1>{{ message }}</h1>
+  `
+})
+
+export class AppComponent {
+  message: string;
+
+  constructor(private dataService: DataService) {
+    this.message = this.dataService.getMessage();
+  }
+}
+```
+
 ## Forms
 ### Definition
 
@@ -109,6 +242,50 @@ Angular's forms API supports a wide range of input types, validation rules, and 
 
 ### Examples
 
+```ts
+import { Component } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+
+@Component({
+  selector: 'app-root',
+  template: `
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" formControlName="name">
+        <div *ngIf="myForm.controls.name.errors">
+          <p *ngIf="myForm.controls.name.errors.required">Name is required.</p>
+          <p *ngIf="myForm.controls.name.errors.minlength">Name must be at least 3 characters long.</p>
+        </div>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" formControlName="email">
+        <div *ngIf="myForm.controls.email.errors">
+          <p *ngIf="myForm.controls.email.errors.required">Email is required.</p>
+          <p *ngIf="myForm.controls.email.errors.email">Email must be a valid email address.</p>
+        </div>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  `
+})
+
+export class AppComponent {
+  myForm: FormGroup;
+
+  constructor(private formBuilder: FormBuilder) {
+    this.myForm = this.formBuilder.group({
+      name: ['', [Validators.required, Validators.minLength(3)]],
+      email: ['', [Validators.required, Validators.email]]
+    });
+  }
+
+  onSubmit() {
+    console.log(this.myForm.value);
+  }
+}
+```
 
 ## Wireframes 
 
