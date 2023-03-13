@@ -105,6 +105,18 @@ First, I began with Zoning :
 
 // TODO : Add Admin zoning
 
+Secondly, I added wireframes : 
+
+- [Homepage wireframe](./diagrams/wireframes/wireframe-homepage.png)
+- [Homepage wireframe Mobile part 1](./diagrams/wireframes/wireframe-homepage-mobile-part1.png) [Homepage wireframe Mobile part 2](./diagrams/wireframes/wireframe-homepage-mobile-part2.png)
+- [Login wireframe](./diagrams/wireframes/wireframe-login.png)
+- [Login wireframe Mobile](./diagrams/wireframes/wireframe-login-mobile.png)
+- [Signup wireframe](./diagrams/wireframes/wireframe-registration.png)
+- [Signup wireframe Mobile](./diagrams/wireframes/wireframe-registration-mobile.png)
+- [Personal Space wireframe](./diagrams/wireframes/wireframe-personal-space.png)
+- [Personal Space wireframe Mobile](./diagrams/wireframes/wireframe-personal-space-mobile.png)
+
+// TODO : Add Admin zoning
 ## Graphical Design
 
 - 
