@@ -96,9 +96,14 @@ First, I began with Zoning :
 
 - [Homepage Zoning](./diagrams/zoning/zoning-homepage.png)
 - [Homepage Zoning Mobile](./diagrams/zoning/zoning-homepage-mobile.png)
+- [Login Zoning](./diagrams/zoning/zoning-login.png)
+- [Login Zoning Mobile](./diagrams/zoning/zoning-login-mobile.png)
+- [Signup Zoning](./diagrams/zoning/zoning-registration.png)
+- [Signup Zoning Mobile](./diagrams/zoning/zoning-registration-mobile.png)
+- [Personal Space Zoning](./diagrams/zoning/zoning-personal-space.png)
+- [Personal Space Zoning Mobile](./diagrams/zoning/zoning-personal-space-mobile.png)
 
-
-
+// TODO : Add Admin zoning
 
 ## Graphical Design
 
