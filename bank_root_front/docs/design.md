@@ -25,6 +25,45 @@ This front-end should be Responsive.
 
 We will not work with Mobile-First methodology. This methodology is known to be the most efficient, but we are not used to using it.
 
+### User's needs
+
+This application should be used by : 
+- **Simple users**:
+  - Access the homepage
+- **Customers** (client of the bank, owning a bank account):
+    - Access the homepage
+    - Login on his account
+    - Access a personal space
+    - Operate requests (transfer, deposit, withdrawal, ...)
+- Admin : 
+  - Access the homepage
+  - Login to his account
+  - Access his personal space
+  - See all accounts
+  - See list of different requests.
+
+### Objectives : 
+
+#### Global objectives 
+
+This application should provide a user-friendly interface and take care of UX & UI.
+This application should ensure security.
+The application should be run on different devices (Responsive).
+
+#### Personal objectives
+
+ I'd like to learn the most about design (UX / UI) and the key concepts of Angular in one week.
+
+### Other requirements
+
+- Secure connexion
+- Data security
+- Performance
+- Accessibility
+- SEO
+- Cross-platform compatibility
+- Tests & Quality
+
 ## 2. Tools
 
 For this project, we will use some frameworks: 
@@ -119,6 +158,14 @@ Secondly, I added wireframes :
 // TODO : Add Admin zoning
 ## Graphical Design
 
-- 
+This is the list of the design specification : 
+
+### Buttons
+
+### Forms
+
+### Images
+
+### 
 
 
