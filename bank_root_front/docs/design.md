@@ -78,6 +78,7 @@ The web application will be composed of :
       - A money deposit form
 - An admin page with:
   - Logo that leads to homepage
+  - A setting icon (disabled)
   - A search bar to navigate through accounts
   - A list of the current requests
     - Management of account opening requests
@@ -86,18 +87,18 @@ The web application will be composed of :
     - Management of the requests of the money deposits
     - Management of credit applications
   - A button to sort accounts
-
-  - Management of account opening requests
-  - Management of cash withdrawal requests
-  - Management of transfer requests
-  - Management of the requests of the money deposits
-  - Management of credit applications
-- (Optionnal): A contact page with:
+- (Optional): A contact page with:
   - a contact form
 
 ## Wireframes
 
 First, I began with Zoning : 
+
+- [Homepage Zoning](./diagrams/zoning/zoning-homepage.png)
+- [Homepage Zoning Mobile](./diagrams/zoning/zoning-homepage-mobile.png)
+
+
+
 
 ## Graphical Design
 
