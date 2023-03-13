@@ -163,11 +163,15 @@ This is the list of the design specification :
 ### Colors
 
 Following the 60-30-10 design rule : 
-- Primary color : f4fcf9
-- Secondary color : 198092
-- Ternary color : 5BD0A4
-
+- Primary color : f4fcf9 : The blank color is chosen for it's simplicity and cleanliness
+- Secondary color : 198092 : The blue is chosen for it's meaning of confidence, stability and clarity.
+- Ternary color : 5BD0A4 : The green color is chosen for it's meaning of prosperity and well-being.
+- Other : B2B2B2 The grey is chosen for cards, it's a good color for filing because of it's neutrality.
+- 
 ### Typography
+
+Title : [Montserrat](https://fonts.google.com/specimen/Montserrat)
+Paragraphs : [Roboto](https://fonts.google.com/specimen/Roboto)
 
 ### Icons
 
