@@ -38,23 +38,69 @@ Other Useful tools:
 ## 3. Architecture
 
 The web application will be composed of : 
-- A homepage
-- A login page
-- A registration page
+- A homepage with : 
+  - A list of all bank accounts
+  - A signup button that leads to the registration page
+  - A signin button that lead to the signin page
+- A login page with : 
+  - A login form : 
+    - mail button
+    - password button
+    - Forgotten password
+    - Signin button
+    - back button && Logo that leads to the homepage
+- A registration page with : 
+  - A component to upload profile picture (not available with API)
+  - Components for:
+    - Name
+    - LastName
+    - Email
+    - Address (not available with API)
+    - Password (Must be secured)
+    - Confirm Password 
+    - Date of birth
+    - Accept the term of conditions
+    - Signup button
+  - Back Button && Logo that must lead to the homepage
 - A personal space with: 
-  - An account deletion form
-  - A cash withdrawal form
-  - A transfer request form
-  - A money deposit form
+  - A logo button that leads to the homepage
+  - A search bar (not available) 
+  - Parameters button (not available)
+  - Help Button (not available)
+  - Notification button (not available)
+  - The user icon (not available with API)
+  - Navigation bar to navigate inside personal space
+  - List of the last transactions
+  - different forms : 
+      - An account deletion form
+      - A cash withdrawal form
+      - A transfer request form
+      - A money deposit form
 - An admin page with:
+  - Logo that leads to homepage
+  - A search bar to navigate through accounts
+  - A list of the current requests
+    - Management of account opening requests
+    - Management of cash withdrawal requests
+    - Management of transfer requests
+    - Management of the requests of the money deposits
+    - Management of credit applications
+  - A button to sort accounts
+
   - Management of account opening requests
   - Management of cash withdrawal requests
   - Management of transfer requests
   - Management of the requests of the money deposits
   - Management of credit applications
+- (Optionnal): A contact page with:
+  - a contact form
 
 ## Wireframes
 
+First, I began with Zoning : 
 
+## Graphical Design
+
+- 
 
 
