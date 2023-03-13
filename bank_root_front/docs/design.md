@@ -160,6 +160,17 @@ Secondly, I added wireframes :
 
 This is the list of the design specification : 
 
+### Colors
+
+Following the 60-30-10 design rule : 
+- Primary color : f4fcf9
+- Secondary color : 198092
+- Ternary color : 5BD0A4
+
+### Typography
+
+### Icons
+
 ### Buttons
 
 ### Forms
