@@ -147,13 +147,23 @@ First, I began with Zoning :
 Secondly, I added wireframes : 
 
 - [Homepage wireframe](./diagrams/wireframes/wireframe-homepage.png)
-- [Homepage wireframe Mobile part 1](./diagrams/wireframes/wireframe-homepage-mobile-part1.png) [Homepage wireframe Mobile part 2](./diagrams/wireframes/wireframe-homepage-mobile-part2.png)
+- [Homepage wireframe Mobile part](./diagrams/wireframes/homepage-wireframe-mobile.png)
 - [Login wireframe](./diagrams/wireframes/wireframe-login.png)
 - [Login wireframe Mobile](./diagrams/wireframes/wireframe-login-mobile.png)
 - [Signup wireframe](./diagrams/wireframes/wireframe-registration.png)
 - [Signup wireframe Mobile](./diagrams/wireframes/wireframe-registration-mobile.png)
 - [Personal Space wireframe](./diagrams/wireframes/wireframe-personal-space.png)
 - [Personal Space wireframe Mobile](./diagrams/wireframes/wireframe-personal-space-mobile.png)
+
+
+Finally, I made Mockups : 
+
+- [homepage](./diagrams/Mockups/mockup-homepage.png)
+- [homepage mobile](./diagrams/Mockups/mockup-homepage-mobile.png)
+- [admin pannel](./diagrams/Mockups/mockup-admin-space.png)
+- [admin pannel mobile](./diagrams/Mockups/mockup-admin-pannel-mobile.png)
+- [personal space](./diagrams/Mockups/mockup-personal-space.png)
+- [personal space mobile](./diagrams/Mockups/mockup-personal-space-mobile.png)
 
 // TODO : Add Admin zoning
 ## Graphical Design
