@@ -1,10 +1,19 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'template',
+  template: `
+    <div>
+      <h1>Mon Composant</h1>
+      <p>Ceci est mon composant Angular.</p>
+    </div>
+  `,
+  styles: [`
+    h1 {
+      color: blue;
+    }
+  `]
 })
 export class AppComponent {
-  title = 'bank_root_front';
+
 }
