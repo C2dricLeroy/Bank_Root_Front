@@ -1,24 +1,24 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RegistrationComponent } from './pages/registration/registration.component';
-import { AccountListComponent } from './components/account-list/account-list.component';
-import { FooterComponent } from './components/footer/footer.component';
+import {AdminSpaceModule} from "./pages/admin-space/admin-space.module";
+import {HomepageModule} from "./pages/homepage/homepage.module";
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegistrationComponent,
-    AccountListComponent,
-    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AdminSpaceModule,
+    HomepageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}
