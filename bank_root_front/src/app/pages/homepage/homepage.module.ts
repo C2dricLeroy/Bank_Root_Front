@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomepageComponent } from './homepage.component';
-import {CommonComposentModule} from "../../components/common.module";
+import {CommonComposentModule} from "../../components/common/common.module";
 
 
 

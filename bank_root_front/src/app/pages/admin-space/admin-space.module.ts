@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AdminSpaceComponent } from './admin-space.component';
-import {CommonComposentModule} from "../../components/common.module";
+import {CommonComposentModule} from "../../components/common/common.module";
 
 @NgModule({
   declarations: [
