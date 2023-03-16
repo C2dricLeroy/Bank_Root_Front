@@ -7,13 +7,14 @@ import { HomepageModule } from './pages/homepage/homepage.module';
 import { LoginModule } from './pages/login/login.module';
 import { PersonalSpaceModule } from './pages/personal-space/personal-space.module';
 import { RegistrationModule } from './pages/registration/registration.module';
-import { HomeHeaderComponent } from './components/home/home-header/home-header.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     AdminSpaceModule,
     HomepageModule,
     LoginModule,
