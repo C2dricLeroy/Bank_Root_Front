@@ -1,0 +1,9 @@
+.form-card {
+  justify-content: center;
+  align-items: center;
+  background-color: #282828;
+}
+
+#signin {
+  background-color: hsla(152, 61%, 62%, 85%);
+}
