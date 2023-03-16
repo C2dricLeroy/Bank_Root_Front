@@ -11,10 +11,13 @@ footer {
 }
 
 p, a {
-  color: white;
-  margin: 5px 30px;
-}
+  color: #F8F8F8;
+  margin: 7px 30px
 
+}
+html, body {
+  height: 100%;
+}
 
 
 @media screen and (min-width: 768px) {
@@ -26,5 +29,12 @@ p, a {
 @media screen and (min-width: 1024px) {
   body {
     font-size: 20px;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+
+
   }
 }
