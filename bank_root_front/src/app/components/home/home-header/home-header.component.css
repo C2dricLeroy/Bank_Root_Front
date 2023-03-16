@@ -1,10 +1,12 @@
 nav {
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin: 10px;
+  background: #F8F8F8;
 }
 
 
@@ -15,3 +17,23 @@ img {
   padding: 5px;
 }
 
+form {
+  padding: 5px;
+}
+
+form input {
+  background-color: #282828;
+}
+.button-container button {
+  background-color:	hsla(186, 67%, 33%, 50%);
+  color: black;
+  margin: 5px;
+}
+
+form button {
+  background-color:	hsla(186, 67%, 33%, 50%);
+  color: black;
+}
+.signup {
+  background-color: #1C818C;
+}
