@@ -1,10 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { GetService } from '../../../services/get.service';
 
 @Component({
   selector: 'app-admin-cards',
   templateUrl: './admin-cards.component.html',
-  styleUrls: ['./admin-cards.component.css']
+  styleUrls: ['./admin-cards.component.css'],
 })
-export class AdminCardsComponent {
+export class AdminCardsComponent implements OnInit {
+  requests: any;
 
+  constructor(private service: GetService) {}
+
+  ngOnInit() {
+    this.service.getRequests().subscribe(response => {
+      console.log(response);
+      this.requests = response;
+    });
+  }
 }
