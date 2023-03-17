@@ -42,6 +42,20 @@ section {
   height: auto;
 }
 
+.modal {
+  display: none; /* Masquer la modale par défaut */
+  position: fixed; /* Positionner la modale en tant que position fixe */
+  z-index: 1; /* Positionner la modale au-dessus des autres éléments */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Ajouter le défilement si le contenu de la modale est trop grand */
+  background-color: rgba(0, 0, 0, 0.4); /* Faire un fond sombre pour la modale */
+}
+
+
+
 
 @media screen and (min-width: 768px) {
 
