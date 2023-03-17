@@ -1,19 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { GetService } from './services/get.service';
 
 @Component({
-  selector: 'template',
-  template: `
-    <div>
-      <h1>Mon Composant</h1>
-      <p>Ceci est mon composant Angular.</p>
-    </div>
-  `,
-  styles: [`
-    h1 {
-      color: blue;
-    }
-  `]
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
-
-}
+export class AppComponent {}

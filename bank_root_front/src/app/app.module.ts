@@ -1,24 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RegistrationComponent } from './pages/registration/registration.component';
-import { AccountListComponent } from './components/account-list/account-list.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { AdminSpaceModule } from './pages/admin-space/admin-space.module';
+import { HomepageModule } from './pages/homepage/homepage.module';
+import { LoginModule } from './pages/login/login.module';
+import { PersonalSpaceModule } from './pages/personal-space/personal-space.module';
+import { RegistrationModule } from './pages/registration/registration.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    RegistrationComponent,
-    AccountListComponent,
-    FooterComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    AdminSpaceModule,
+    HomepageModule,
+    LoginModule,
+    PersonalSpaceModule,
+    RegistrationModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [],
 })
-export class AppModule { }
+export class AppModule {}

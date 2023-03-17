@@ -1,0 +1,16 @@
+.card {
+  background-color: #1C818C;
+  box-shadow: 1px 1px 3px black;
+  margin: 10px;
+
+}
+
+.container {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  /*flex-direction: column;*/
+  margin: 0 auto;
+}

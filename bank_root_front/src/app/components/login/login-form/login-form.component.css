@@ -1,0 +1,14 @@
+.form-card {
+  justify-content: center;
+  align-items: center;
+  background-color: #282828;
+}
+
+#password, #email{
+  background-color:	hsla(186, 67%, 33%, 50%);
+}
+
+#signin {
+  background-color: hsla(152, 61%, 62%, 85%);
+}
+
