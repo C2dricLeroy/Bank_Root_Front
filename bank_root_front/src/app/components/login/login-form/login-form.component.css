@@ -1,4 +1,5 @@
 .form-card {
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: #282828;
@@ -12,3 +13,6 @@
   background-color: hsla(152, 61%, 62%, 85%);
 }
 
+.container{
+  height: 80vh;
+}
