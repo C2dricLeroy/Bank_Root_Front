@@ -11,4 +11,8 @@ export class GetService {
   getRequests() {
     return this.httpClient.get('/account-request/all');
   }
+
+  getAccount() {
+    return this.httpClient.get('/user');
+  }
 }
