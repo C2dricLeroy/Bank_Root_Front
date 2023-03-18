@@ -6,7 +6,7 @@ footer {
   background-color: #37A69B;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: relative;
   bottom: 0;
 }
 

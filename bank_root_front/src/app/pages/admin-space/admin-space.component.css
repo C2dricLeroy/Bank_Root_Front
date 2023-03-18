@@ -4,3 +4,7 @@ html,body {
   background-color : #F8F8F8
 }
 
+body {
+  height: 80vh
+}
+

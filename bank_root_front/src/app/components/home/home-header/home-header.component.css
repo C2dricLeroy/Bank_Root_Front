@@ -7,8 +7,9 @@ nav {
   justify-content: space-around;
   align-items: center;
   background: #F8F8F8;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-
 
 img {
   width: 35%;
@@ -34,6 +35,8 @@ form button {
   background-color:	hsla(186, 67%, 33%, 50%);
   color: black;
 }
-.signup {
+
+#signup {
   background-color: #1C818C;
 }
+

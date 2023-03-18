@@ -7,7 +7,7 @@ import { AdminCardsComponent } from '../../components/admin/admin-cards/admin-ca
 
 @NgModule({
   declarations: [AdminSpaceComponent, AdminCardsComponent],
-  imports: [CommonModule, CommonComposentModule],
+  imports: [CommonModule, CommonComposentModule, AppModule],
   exports: [AdminSpaceComponent],
   bootstrap: [AdminSpaceComponent],
 })
