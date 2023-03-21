@@ -12,7 +12,7 @@ export class AdminCardsComponent implements OnInit {
   constructor(private service: GetService) {}
 
   ngOnInit() {
-    this.service.getRequests().subscribe(response => {
+    this.service.getAccount().subscribe(response => {
       this.requests = response;
     });
   }
