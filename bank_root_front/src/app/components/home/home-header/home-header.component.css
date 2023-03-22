@@ -1,14 +1,13 @@
 nav {
   width: 100%;
-  height: auto;
+  height: 10vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   background: #F8F8F8;
-  margin-top: 20px;
-  margin-bottom: 20px;
+
 }
 
 img {

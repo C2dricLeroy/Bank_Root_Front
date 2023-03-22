@@ -10,28 +10,33 @@ import { Router } from '@angular/router';
   styleUrls: ['./register-form.component.css'],
 })
 export class RegisterFormComponent {
+  error: boolean;
   constructor(
     private service: PostService,
     private formBuilder: FormBuilder,
     private router: Router
-  ) {}
+  ) {
+    this.error = false;
+  }
   user = {
+    name: '',
+    lastname: '',
     mail: '',
     password: '',
-    confirmPassword: '',
   };
+  confirmPassword = '';
 
-  async onSubmit() {
-    if (this.user.password === this.user.confirmPassword) {
-      const response = await this.service
+  onSubmit() {
+    if (this.user.password === this.confirmPassword) {
+      const response = this.service
         .register(this.user)
         .subscribe(response => console.log(response));
+    } else {
+      this.error = true;
+    }
+  }
 
-      /*if (response) {
-        await console.log(response);
-        window.alert('Votre compte a bien été créé');
-        await this.router.navigate(['/login']);
-      }*/
-    } else return window.alert('wrong informations');
+  closeError() {
+    this.error = false;
   }
 }

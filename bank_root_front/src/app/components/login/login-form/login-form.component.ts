@@ -19,7 +19,7 @@ export class LoginFormComponent implements OnInit {
 
   ngOnInit(): void {
     if (this.authService.getToken()) {
-      this.router.navigate(['/home']);
+      this.router.navigate(['/admin-space']);
     }
 
     this.signing = new FormGroup({
@@ -31,7 +31,6 @@ export class LoginFormComponent implements OnInit {
   onSubmit(event: Event) {
     event.preventDefault();
     const { mail, password } = this.signing.value;
-    console.log(this.signing);
     this.authService
       .login({ mail, password })
       .pipe(first())

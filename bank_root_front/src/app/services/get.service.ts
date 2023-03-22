@@ -5,11 +5,18 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   providedIn: 'root',
 })
 export class GetService {
-  private url = 'http://152.228.163.78:3000/';
+  httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type': 'application/json',
+      Accept: 'application/json',
+      Authorization: 'Bearer' + localStorage.getItem('JWT_TOKEN'),
+    }),
+  };
+
   constructor(private httpClient: HttpClient) {}
 
   getRequests() {
-    return this.httpClient.get('/account-request/all');
+    return this.httpClient.get('/account-request/all', this.httpOptions);
   }
 
   getAccount() {

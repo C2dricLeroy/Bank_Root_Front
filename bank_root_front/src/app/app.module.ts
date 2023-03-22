@@ -13,6 +13,7 @@ import { RequestPipe } from './pipes/request.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { AuthService } from './services/authentication.service';
+import { httpInterceptorProviders } from './interceptors/interceptor.module';
 
 @NgModule({
   declarations: [AppComponent, BorderCardDirective, RequestPipe],
@@ -27,7 +28,7 @@ import { AuthService } from './services/authentication.service';
     RegistrationModule,
     BrowserAnimationsModule,
   ],
-  providers: [AuthService],
+  providers: [AuthService, httpInterceptorProviders],
   bootstrap: [AppComponent],
   exports: [BorderCardDirective, RequestPipe],
 })

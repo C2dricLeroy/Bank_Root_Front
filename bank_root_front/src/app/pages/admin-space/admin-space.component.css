@@ -4,7 +4,11 @@ html,body {
   background-color : #F8F8F8
 }
 
-body {
-  height: 80vh
+.content {
+  height: 100%;
+
 }
 
+app-admin-cards, app-account-list {
+  height: 100%;
+}

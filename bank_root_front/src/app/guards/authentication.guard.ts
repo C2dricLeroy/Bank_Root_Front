@@ -1,4 +1,3 @@
-/*
 import { inject, Injectable } from '@angular/core';
 import { Observable, tap } from 'rxjs';
 import {
@@ -18,10 +17,9 @@ export const canActivate: CanActivateFn = (
   const router = inject(Router);
 
   if (!auth.getToken()) {
-    router.navigate(['/signing']);
+    router.navigate(['/login']);
     return false;
   }
 
   return true;
 };
-*/
