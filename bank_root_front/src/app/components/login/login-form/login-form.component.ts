@@ -17,6 +17,8 @@ export class LoginFormComponent implements OnInit {
     this.error = false;
   }
 
+  errorMessage = '';
+
   ngOnInit(): void {
     if (this.authService.getToken()) {
       this.router.navigate(['/admin-space']);
@@ -28,14 +30,31 @@ export class LoginFormComponent implements OnInit {
     });
   }
 
-  onSubmit(event: Event) {
+  register() {
+    return new Promise((resolve, reject) => {
+      const { mail, password } = this.signing.value;
+      this.authService
+        .login({ mail, password })
+        .pipe(first())
+        .subscribe({
+          next(data) {
+            resolve(data);
+          },
+          error(err) {
+            reject(err);
+          },
+        });
+    });
+  }
+  async onSubmit(event: Event) {
     event.preventDefault();
-    const { mail, password } = this.signing.value;
-    this.authService
-      .login({ mail, password })
-      .pipe(first())
-      .subscribe((data: any) => {
-        this.router.navigate(['/admin-space']);
-      });
+    const response: any = await this.register();
+    if (response.statusCode === 200) {
+      console.log('réussi');
+    }
+  }
+
+  closeError() {
+    this.error = false;
   }
 }
