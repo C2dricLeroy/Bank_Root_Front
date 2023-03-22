@@ -52,6 +52,7 @@ export class RegisterFormComponent {
       }
     } else {
       this.error = true;
+      this.errorMessage = 'Passwords must be the same!';
     }
   }
 
