@@ -4,7 +4,18 @@ html,body {
   background-color : #F8F8F8
 }
 
-body {
-  height: 80vh
+.content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
 }
 
+app-admin-cards, app-account-list {
+  height: 100%;
+}
+
+button {
+  width: 100px;
+  margin: auto auto 20px;
+}

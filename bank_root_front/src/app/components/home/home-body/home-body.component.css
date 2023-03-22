@@ -1,10 +1,10 @@
 .container {
+  height: 42.5vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 20px auto;
-  margin-top: 50px;
+  margin: auto;
 }
 
 
@@ -27,15 +27,18 @@
 }
 
 .card {
+  width: auto;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 50px;
+
 }
 
 .card-container {
-  margin: -30px auto;
+
+  margin: auto;
 }
 
 section {
