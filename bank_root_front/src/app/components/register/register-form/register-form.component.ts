@@ -26,11 +26,34 @@ export class RegisterFormComponent {
   };
   confirmPassword = '';
 
-  onSubmit() {
+  errorMessage = '';
+
+  register() {
+    return new Promise((resolve, reject) => {
+      this.service.register(this.user).subscribe({
+        next(data) {
+          resolve(data);
+        },
+        error(err) {
+          reject(err);
+        },
+      });
+    });
+  }
+
+  async onSubmit() {
     if (this.user.password === this.confirmPassword) {
-      const response = this.service
-        .register(this.user)
-        .subscribe(response => console.log(response));
+      const response: any = await this.register();
+      if (response.statusCode === 200) {
+        console.log('réussi');
+      } else if (response.statusCode === 409) {
+        this.error = true;
+        this.errorMessage = 'This user already exists';
+      } else {
+        console.log(response);
+        this.error = true;
+        this.errorMessage = 'Look on your console';
+      }
     } else {
       this.error = true;
     }
