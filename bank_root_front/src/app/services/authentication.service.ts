@@ -16,7 +16,7 @@ export class AuthService {
     }),
   };
 
-  constructor(private http: HttpClient, private router: Router) {}
+  constructor(private http: HttpClient) {}
 
   login(data: LoginInterface) {
     return this.http.post('/auth/login', data, this.httpOptions).pipe(

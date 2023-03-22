@@ -14,6 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { AuthService } from './services/authentication.service';
 import { httpInterceptorProviders } from './interceptors/interceptor.module';
+import { LoginFormComponent } from './components/login/login-form/login-form.component';
 
 @NgModule({
   declarations: [AppComponent, BorderCardDirective, RequestPipe],
@@ -28,7 +29,7 @@ import { httpInterceptorProviders } from './interceptors/interceptor.module';
     RegistrationModule,
     BrowserAnimationsModule,
   ],
-  providers: [AuthService, httpInterceptorProviders],
+  providers: [AuthService, httpInterceptorProviders, LoginFormComponent],
   bootstrap: [AppComponent],
   exports: [BorderCardDirective, RequestPipe],
 })

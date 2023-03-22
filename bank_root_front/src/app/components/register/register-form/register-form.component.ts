@@ -11,11 +11,7 @@ import { Router } from '@angular/router';
 })
 export class RegisterFormComponent {
   error: boolean;
-  constructor(
-    private service: PostService,
-    private formBuilder: FormBuilder,
-    private router: Router
-  ) {
+  constructor(private service: PostService) {
     this.error = false;
   }
   user = {
