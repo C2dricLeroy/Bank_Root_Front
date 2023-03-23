@@ -15,11 +15,13 @@ import { FormsModule } from '@angular/forms';
 import { AuthService } from './services/authentication.service';
 import { httpInterceptorProviders } from './interceptors/interceptor.module';
 import { LoginFormComponent } from './components/login/login-form/login-form.component';
+import { AgGridModule } from 'ag-grid-angular';
 
 @NgModule({
   declarations: [AppComponent, BorderCardDirective, RequestPipe],
   imports: [
     BrowserModule,
+    AgGridModule,
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
