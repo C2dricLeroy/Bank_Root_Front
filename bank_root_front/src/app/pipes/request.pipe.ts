@@ -8,12 +8,15 @@ export class RequestPipe implements PipeTransform {
     let color = '';
     switch (type) {
       case 'OVERDRAFT_LIMIT':
-        color = 'orange';
+        color = 'bg-orange-800';
         break;
       case 'PAYMENT_CEILING':
-        color = 'cyan';
+        color = 'bg-blue-800';
+        break;
+      case 'WITHDRAWAL_LIMIT':
+        color = 'bg-green-800';
         break;
     }
-    return type.toLowerCase();
+    return color;
   }
 }

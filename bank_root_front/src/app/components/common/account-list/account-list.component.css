@@ -29,3 +29,29 @@
   border: 1px solid black;
   margin-top: 5px;
 }
+
+#search-result {
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  border-radius: 5px;
+
+}
+
+#result {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+#result:hover {
+  background-color: #282828;
+  color: #F8F8F8;
+}
+
+#search {
+  border: 0px solid black;
+}

@@ -2,9 +2,10 @@
   <div class = "type-card">
     <ul class="list-transactions">
       <li *ngFor="let request of requests" class="list-group-item">
-          <a appBorderCard class="card block m-3 max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Requests</h5>
-            <p class="font-normal text-gray-700 dark:text-gray-400">{{request.request_type | request}}</p>
+          <a appBorderCard class="{{request.request_type | request}}  card block m-3 max-w-sm p-6  border border-gray-200 rounded-lg shadow hover:bg-gray-100  dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-100 dark:text-grey-100">{{request.request_type}}</h5>
+            <p class="font-normal text-gray-100 dark:text-grey-100"><b><u>Content:</u></b><br>{{request.content}}</p>
+            <p class="date font-normal text-gray-700 dark:text-gray-400">{{request.created_at | date: 'dd/MM/yyyy'}}</p>
           </a>
       </li>
     </ul>
