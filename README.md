@@ -28,3 +28,7 @@ Forms: User data is managed via forms.
 * A Jira with all the different steps of the project
 * Design diagrams: Zoning, Wireframe, Mockup
 * An interface deployed on a VPS and accessible from any browser
+
+### Todo : 
+
+* Implement login messages for error / success handling
