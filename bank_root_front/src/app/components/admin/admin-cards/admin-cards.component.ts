@@ -16,6 +16,7 @@ export class AdminCardsComponent implements OnInit {
 
   ngOnInit() {
     this.service.getRequests().subscribe(response => {
+      console.log(response);
       this.requests = response;
     });
   }
