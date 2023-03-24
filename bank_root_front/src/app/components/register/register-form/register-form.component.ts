@@ -13,6 +13,7 @@ export class RegisterFormComponent {
   error: boolean;
   constructor(private service: PostService) {
     this.error = false;
+    this.confirmation = false;
   }
   user = {
     name: '',
@@ -21,7 +22,8 @@ export class RegisterFormComponent {
     password: '',
   };
   confirmPassword = '';
-
+  confirmation: boolean;
+  confirmationMessage = '';
   errorMessage = '';
 
   register() {
@@ -41,7 +43,8 @@ export class RegisterFormComponent {
     if (this.user.password === this.confirmPassword) {
       const response: any = await this.register();
       if (response.statusCode === 200) {
-        console.log('réussi');
+        this.confirmation = true;
+        this.confirmationMessage = 'The user has been successfully created!';
       } else if (response.statusCode === 409) {
         this.error = true;
         this.errorMessage = 'This user already exists';

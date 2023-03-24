@@ -15,3 +15,10 @@
 #error {
   width: 400px;
 }
+
+#confirmation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
