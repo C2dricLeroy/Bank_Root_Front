@@ -1,19 +1,40 @@
 .container {
-  height: 42.5vh;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
   margin: auto;
+  margin-top: 2.5%;
 }
 
+
+
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: auto;
+  margin-top: 10px;
+}
 
 .row {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   max-width: 50%;
+  width: 500px;
+  height: auto;
+  margin: auto;
+
+}
+
+.home-img {
+  width: 500px;
+  height: 375px;
 }
 
 .card p {
@@ -33,17 +54,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .card-container {
-
-  margin: auto;
+  margin: 50px auto;
+  margin-bottom: 5%;
 }
 
-section {
-  height: auto;
-}
 
 .modal {
   display: none; /* Masquer la modale par défaut */
